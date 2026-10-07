@@ -1,0 +1,154 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+#root {
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background-color: white;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+.container {
+  max-width: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: auto;
+  position: relative;
+  gap: 20px;
+}
+
+.mini-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  margin: 0;
+  padding: 15px;
+  border-radius: 15px;
+  min-width: 15px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mini-header{
+  padding: 10px;
+  background-color: rgb(226, 195, 147);
+  text-align: center;
+  border-radius: 10px;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 20px 0;
+}
+
+.answer-space {
+    background-color: rgb(226, 195, 147);
+    min-height: 40px;
+    width: 100%;
+    margin-bottom: 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+
+.answer-space.correct {
+    background-color: rgb(150, 220, 150);
+}
+
+.answer-space.wrong {
+    background-color: rgb(219, 93, 93);
+}
+
+li {
+    list-style: none;
+    margin: 3px 10%;
+    background-color: #FFFDD0;
+    border-radius: 15px;
+    padding: 3px 8px;
+
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    white-space: nowrap;
+}
+
+button.newdrink {
+  width: auto;
+  text-align: center;
+}
+
+.button {
+  background-color: rgba(138, 98, 12, 0.942);
+  font-weight: bold;
+  color: white;
+}
+
+.check-answer {
+    display: block;
+    margin: 30px auto;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.title {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.title-container {
+  text-align: left;
+  margin: 30px auto 50px;
+  max-width:1100px;
+}
+
+.title-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.title-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.order-title {
+    text-align: center;
+}
+
+.drink-container {
+  display: flex;
+  justify-content: center;
+  max-width:1000px;
+  margin: 0 auto 30px;
+}
+
+.drink-name {
+    background-color: rgb(226, 195, 147);
+    text-align: center;
+    border-radius: 10px 0 0 10px;
+    margin: 0;
+    padding: 12px 20px;
+    min-height: 28px;
+    flex: 1;
+
+    display:flex;
+    align-items:center;
+    justify-content: center;
+}
+
+button.newdrink {
+    width: auto;
+    border-radius: 0 10px 10px 0;
+    padding: 0 20px;
+    border: none;
+}
