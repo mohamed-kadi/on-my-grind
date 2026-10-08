@@ -1,23 +1,23 @@
-import { useState } from 'react';
 
 const RecipeChoices = ({ choices, label, handleChange, checked }) => {
     return (
-        <div className="radio-buttons">
-            {choices &&
+        <>
+            <input className="textbox"
+            type="text"
+            name={label}  
+            placeholder="Guess the ingredient.."    
+            onChange={handleChange}
+            value={checked}
+            />
+            <div className="radio-buttons">
+               {choices &&
                 choices.map((choice) => (
                         <li key={choice}>
-                        <input
-                            id={choice}
-                            value={choice}
-                            type="radio"
-                            name={label}       
-                            onChange={handleChange}
-                            checked={checked == choice}
-                            />
-                        {choice}
-                    </li>    
+                          {choice}
+                        </li>    
                 ))}
-        </div>
+            </div>
+        </>
     )
 }
 

@@ -26,6 +26,22 @@ const BaristaForm = () => {
     }
 
     const onCheckAnswer = () => {
+        if (!ingredients.temperature.includes(inputs.temperature)) {
+            alert('Please enter a valid temperature!');
+            return 0;
+        }
+        if (!ingredients.milk.includes(inputs.milk)) {
+            alert('Please enter a valid milk choice!');
+            return 0;
+        }
+        if (!ingredients.syrup.includes(inputs.syrup)) {
+            alert('Please enter a valid syrup choice');
+            return 0;
+        }
+        if (!ingredients.blended.includes(inputs.blended)) {
+            alert('Please enter a valid blend!');
+            return 0;
+        }
         if (inputs.temperature === trueRecipe.temp)
             setTemperatureCorrect("correct");
         else 

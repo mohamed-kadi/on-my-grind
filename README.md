@@ -16,14 +16,25 @@ The app randomly selects a drink and asks the user to guess its temperature, syr
 - Checks guesses against the drink's true recipe
 - Visually indicates correct and incorrect answers
 - Resets the quiz and selections when a new drink is generated
+- Allows users to type their answers instead of selecting radio buttons
+- Validates typed answers against the available ingredient choices
+- Displays an alert when an invalid answer is submitted
 
 ## Video Walkthrough
 
-Here's a walkthrough of the implemented features:
+### Original Lab — Radio Buttons
 
-<img src="walkthrough/on-my-grind-walkthrough.gif" alt="On My Grind walkthrough" width="700" />
+This walkthrough demonstrates the original implementation using radio buttons to select ingredients, check answers, and generate new drinks.
 
-GIF created with **Kap**.
+<img src="walkthrough/on-my-grind-walkthrough.gif" alt="Original On My Grind walkthrough" width="700" />
+
+### Stretch Feature — Text Input Validation
+
+This walkthrough demonstrates the stretch feature implementation using text boxes instead of radio buttons, validating typed answers, displaying alerts for invalid choices, and checking answers against the correct drink recipe.
+
+<img src="walkthrough/on-my-grind-stretch-walkthrough.gif" alt="On My Grind stretch feature walkthrough" width="700" />
+
+GIFs created with **Kap**.
 
 ## Notes
 
@@ -39,3 +50,11 @@ This lab provided practice with:
 - Comparing user input against stored data
 - Dynamically applying CSS classes based on state
 - Flexbox and component-based styling
+
+### Stretch Feature — Text Input Validation
+
+Replaced radio buttons with controlled text inputs while keeping the available choices visible.
+
+Used JavaScript's `.includes()` method to validate user answers against the ingredient arrays before checking recipe correctness.
+
+This provided additional practice with controlled components, array methods, and conditional validation.
